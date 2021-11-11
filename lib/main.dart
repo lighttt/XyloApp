@@ -7,11 +7,13 @@ void main() => runApp(XylophoneApp());
 class XylophoneApp extends StatelessWidget {
   Widget builtKey({int keyNumber, Color keyColor}) {
     return Expanded(
-      child: FlatButton(
+      child: TextButton(
         onPressed: () {
           playSound(keyNumber);
         },
-        padding: EdgeInsets.all(0),
+        style: TextButton.styleFrom(
+          padding: EdgeInsets.all(0),
+        ),
         child: Container(
           color: keyColor,
         ),
