@@ -32,8 +32,7 @@ class XylophoneApp extends StatelessWidget {
       title: "Xylophone",
       theme: ThemeData.dark(),
       home: Scaffold(
-        body: SafeArea(
-          child: Column(
+        body: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               builtKey(keyColor: Colors.red, keyNumber: 1),
@@ -45,7 +44,6 @@ class XylophoneApp extends StatelessWidget {
               builtKey(keyColor: Colors.orange, keyNumber: 7),
             ],
           ),
-        ),
       ),
     );
   }
